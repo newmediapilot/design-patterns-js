@@ -1,30 +1,49 @@
 export class MySingleton {
 
     _number = 0;
-    _name = "foobaz";
+    _name = "foo-baz";
 
+    /**
+     * Singleton pattern
+     * @returns {MySingleton|*}
+     */
     constructor() {
         if (!MySingleton.$i) MySingleton.$i = this;
 
         return MySingleton.$i;
     }
 
+    /**
+     * Increments number
+     */
     increment() {
         this._number++;
 
         console.log('mySingletonInstance2.increment:', this._number);
     }
 
+    /**
+     * modifies string
+     * @param string
+     */
     setName(string) {
         this._name = string;
 
         console.log('mySingletonInstance2.setName:', string);
     }
 
+    /**
+     * Fetches name
+     * @returns {string}
+     */
     get name() {
         return this._name;
     }
 
+    /**
+     * Fetches number
+     * @returns {number}
+     */
     get number() {
         return this._number;
     }
