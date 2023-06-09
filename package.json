@@ -1,0 +1,25 @@
+{
+  "name": "design-patterns",
+  "version": "1.0.0",
+  "description": "Design pattern examples written for node.",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "test:singleton": "npm run build && node dist/patterns/singleton.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newmediapilot/design-patterns-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/newmediapilot/design-patterns-js/issues"
+  },
+  "homepage": "https://github.com/newmediapilot/design-patterns-js#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5"
+  }
+}
